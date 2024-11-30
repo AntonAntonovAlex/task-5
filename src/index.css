@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.table {
+  margin-top: 5rem;
+}
+
+.books-table-container {
+  padding: 10px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table th,
+.books-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.books-table th {
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  z-index: 2;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-row {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.accordion-row td {
+  padding: 0;
+  border: none;
+}
+
+.accordion-content {
+  display: flex;
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.book-image {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book-details {
+  flex-grow: 1;
+}
+
+.book-details p {
+  margin: 5px 0;
+}
+
+.book-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.book-details ul li {
+  margin-bottom: 5px;
+}
+
+.accordion-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.accordion-toggle:hover {
+  color: #007bff;
+}
+
+.review-author {
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.book-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.book-likes {
+  font-size: 0.9em;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-icon {
+  margin-right: 5px;
+  color: #e63946;
+}
+
+.book-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.book-type {
+  color: #6c757d;
+  font-weight: normal;
+}
+
+.book-author {
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.book-publisher {
+  color: #6c757d;
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
